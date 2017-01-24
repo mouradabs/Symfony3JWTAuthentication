@@ -31,7 +31,6 @@ class LoadFixtures implements FixtureInterface, ContainerAwareInterface
        	$tonyAdmin->setPassword($encodedPassword);
         $manager->persist($tonyAdmin);
 
-
         $manager->flush();
     }
 
