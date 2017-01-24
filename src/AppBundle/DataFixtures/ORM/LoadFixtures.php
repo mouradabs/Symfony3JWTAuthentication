@@ -21,12 +21,12 @@ class LoadFixtures implements FixtureInterface, ContainerAwareInterface
     {
         $passwordEncoder = $this->container->get('security.password_encoder');
 
-		$tonyAdmin = new User();
+        $tonyAdmin = new User();
         $tonyAdmin->setName('Tony');
         $tonyAdmin->setSurname('Gex');
         $tonyAdmin->setUsername('tony_admin');
-	    $tonyAdmin->setEmail('tony_admin@symfony.com');
-		$tonyAdmin->setRoles(['ROLE_ADMIN']);
+        $tonyAdmin->setEmail('tony_admin@symfony.com');
+        $tonyAdmin->setRoles(['ROLE_ADMIN']);
         $encodedPassword = $passwordEncoder->encodePassword($tonyAdmin, 'master');
        	$tonyAdmin->setPassword($encodedPassword);
         $manager->persist($tonyAdmin);
