@@ -23,7 +23,7 @@ class LoadFixtures implements FixtureInterface, ContainerAwareInterface
 
         $tonyAdmin = new User();
         $tonyAdmin->setName('Tony');
-        $tonyAdmin->setSurname('Gex');
+        $tonyAdmin->setSurname('Master');
         $tonyAdmin->setUsername('tony_admin');
         $tonyAdmin->setEmail('tony_admin@symfony.com');
         $tonyAdmin->setRoles(['ROLE_ADMIN']);
