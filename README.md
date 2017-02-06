@@ -1,5 +1,7 @@
 # Symfony3JWTAuthentication
 
+[![Build Status](https://travis-ci.org/Tony133/Symfony3JWTAuthentication.svg?branch=master)](https://travis-ci.org/Tony133/Symfony3JWTAuthentication)
+
 Simple Example Symfony 3 JSON Web Token Authentication with JWTAuthenticationBundle
 
 ## Install with Composer
